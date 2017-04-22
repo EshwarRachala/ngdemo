@@ -15,10 +15,6 @@ const RouteModule = RouterModule.forRoot(
     component: HomeComponent
   },
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: 'create',
     component: CreateComponent
   },
