@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
+import { UpdateComponent } from './update/update.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const RouteModule = RouterModule.forRoot(
   [{
@@ -19,13 +21,23 @@ const RouteModule = RouterModule.forRoot(
   {
     path: 'create',
     component: CreateComponent
+  },
+  {
+    path: 'update',
+    component: UpdateComponent
+  },
+  {
+    path: 'delete',
+    component: DeleteComponent
   }]
 );
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateComponent
+    CreateComponent,
+    UpdateComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
