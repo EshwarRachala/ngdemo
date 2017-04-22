@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create',
-  template: '<h1>Create </h1>'
+  templateUrl: './create.component.html',
+  styleUrls: ['./create.component.css']
 })
 export class CreateComponent {
 }

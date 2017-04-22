@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-update',
-  template: '<h1>Update component</h1>'
+  templateUrl: './update.component.html',
+  styleUrls: ['./update.component.css']
 })
 export class UpdateComponent {
 }
