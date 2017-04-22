@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
 import { DeleteComponent } from './delete/delete.component';
+import { TaskDetailComponent } from './task/task-detail.component';
 
 const RouteModule = RouterModule.forRoot(
   [{
@@ -33,7 +34,8 @@ const RouteModule = RouterModule.forRoot(
     HomeComponent,
     CreateComponent,
     UpdateComponent,
-    DeleteComponent
+    DeleteComponent,
+    TaskDetailComponent
   ],
   imports: [
     BrowserModule,
