@@ -10,7 +10,6 @@ export class AppComponent {
   links = {
     items: ['/items'],
     add: ['./add'],
-    edit: ['./edit'],
-    delete: ['./delete']
+    edit: ['./edit']
   }
 }
