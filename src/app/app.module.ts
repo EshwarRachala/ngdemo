@@ -8,8 +8,8 @@ import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { Items } from '../components/items/items.component';
-import { ItemsList } from '../components/items/items-list.component';
-import { ItemDetail } from '../components/items/item-detail.component';
+import { ItemsList } from '../components/items-list/items-list.component';
+import { ItemDetail } from '../components/item-detail/item-detail.component';
 
 
 import { ROUTES } from './app.routes';
