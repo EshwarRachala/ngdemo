@@ -1,8 +1,8 @@
-import { DeleteComponent } from './delete/delete.component';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CreateComponent } from './create/create.component';
-import { UpdateComponent } from './update/update.component';
+import { DeleteComponent } from './tasks/components/delete/delete.component';
+import { HomeComponent } from './tasks/components/home/home.component';
+import { CreateComponent } from './tasks/components//create/create.component';
+import { UpdateComponent } from './tasks/components/update/update.component';
 
 export const ROUTES: Routes =
   [{

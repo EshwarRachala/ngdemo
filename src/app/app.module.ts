@@ -1,4 +1,5 @@
-import { HomeComponent } from './home/home.component';
+import { CreateComponent } from './tasks/components/create/create.component';
+import { HomeComponent } from './tasks/components/home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,20 +8,19 @@ import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import { CreateComponent } from './create/create.component';
-import { UpdateComponent } from './update/update.component';
-import { DeleteComponent } from './delete/delete.component';
-import { TaskDetailComponent } from './task/task-detail.component';
-import { alltasks, changetask } from './store/index';
+
 import { ROUTES } from './app.routes';
+import { DeleteComponent } from './tasks/components/delete/delete.component';
+import { UpdateComponent } from './tasks/components/update/update.component';
+import { TaskDetailComponent } from './tasks/containers/task/task-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateComponent,
-    UpdateComponent,
     DeleteComponent,
+    UpdateComponent,
+    CreateComponent,
     TaskDetailComponent
   ],
   imports: [
@@ -28,7 +28,7 @@ import { ROUTES } from './app.routes';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES),
-    StoreModule.provideStore({ alltasks, changetask })
+    // StoreModule.provideStore({ alltasks, changetask })
   ],
   providers: [],
   bootstrap: [AppComponent]
