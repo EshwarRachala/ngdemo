@@ -9,7 +9,7 @@
     <button (click)="deleted.emit(item); $event.stopPropagation();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
         <i class="material-icons">close</i>
       </button>
-       <button (click)="selected.emit(item); $event.stopPropagation();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+       <button ng-href="add" (click)="selected.emit(item); $event.stopPropagation();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
         <i class="material-icons">edit</i>
       </button>
   </div>

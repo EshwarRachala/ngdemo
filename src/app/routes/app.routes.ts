@@ -9,7 +9,6 @@ export const ROUTES: Routes =
     { path: 'items', component: ItemsComponent },
     { path: 'add', component: ChangeComponent },
     { path: 'edit', component: ChangeComponent },
-    { path: 'delete', component: ChangeComponent },
     { path: '*', component: ItemsComponent }
   ];
 
