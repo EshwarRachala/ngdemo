@@ -1,3 +1,4 @@
+import 'zone.js/dist/zone';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -6,19 +7,30 @@ import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
+import { Items } from '../components/items/items.component';
+import { ItemsList } from '../components/items/items-list.component';
+import { ItemDetail } from '../components/items/item-detail.component';
 
-// import { alltasks, changetask } from './tasks/store/index';
+
+import { ROUTES } from './app.routes';
+import { items } from '../stores/items.store';
+import { selectedItem } from '../stores/selectedItem.store';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    Items,
+    ItemDetail,
+    ItemsList
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
- //   RouterModule.forRoot(ROUTES)
-   // StoreModule.provideStore({ alltasks, changetask })
+    RouterModule.forRoot(ROUTES),
+    StoreModule.provideStore({ items, selectedItem }),
   ],
   providers: [],
   bootstrap: [AppComponent]

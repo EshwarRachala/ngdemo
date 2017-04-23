@@ -1,29 +1,18 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  <a class="navbar-brand" href="#">Angular Rest </a>
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Tasks <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="create">Add</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="update">Update</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="delete">Delete</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--<router-outlet></router-outlet>-->
-<br>
-<footer class="container">
-  <p>&copy; Company 2017</p>
-</footer>
+<div class="content mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Angular 2 REST Website</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" [routerLink]="links.items">Items</a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content page-content">
+    <router-outlet></router-outlet>
+  </main>
+  <!--<ngrx-store-log-monitor
+    toggleCommand="ctrl-k"
+    positionCommand="ctrl-e"
+  ></ngrx-store-log-monitor>-->
+</div>
