@@ -6,15 +6,15 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 
-import { AppComponent } from './app.component';
-import { Items } from '../components/items/items.component';
-import { ItemsList } from '../components/items-list/items-list.component';
-import { ItemDetail } from '../components/item-detail/item-detail.component';
+import { AppComponent } from './container/app.component';
+import { Items } from './components/items/items.component';
+import { ItemsList } from './components/items-list/items-list.component';
+import { ItemDetail } from './components/item-detail/item-detail.component';
 
 
-import { ROUTES } from './app.routes';
-import { items } from '../stores/items.store';
-import { selectedItem } from '../stores/selectedItem.store';
+import { ROUTES } from './routes/app.routes';
+import { items } from './stores/items.store';
+import { selectedItem } from './stores/selectedItem.store';
 
 
 
