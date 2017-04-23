@@ -2,10 +2,9 @@
   "items": [
     {
       "id": 1,
-      "title": "",
-      "description": "to get stuff",
-      "name": "go to walmart",
-      "priority": "High",
+      "title": "buy cart board car from walmart",
+      "description": "get car items from walmart",
+      "priority": "high",
       "creationdate": "04/21/2017",
       "status": "not completed"
     }

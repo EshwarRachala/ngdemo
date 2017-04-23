@@ -9,7 +9,7 @@ import { ItemDetail } from '../item-detail/item-detail.component'
 
 @Component({
   selector: 'items',
-  templateUrl: './items.componentn.html',
+  templateUrl: './items.component.html',
   styleUrls: ['./items.component.css'],
   providers: [ItemsService]
 })

@@ -1,6 +1,6 @@
-<div *ngFor="let item of items" (click)="selected.emit(item)" class="fem-card mdl-card mdl-shadow--2dp">
+<div *ngFor="let item of items" class="fem-card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">{{item.name}}</h2>
+    <h2 class="mdl-card__title-text">{{item.title}}</h2>
   </div>
   <div class="mdl-card__supporting-text">
     {{item.description}}
@@ -8,6 +8,9 @@
   <div class="mdl-card__menu">
     <button (click)="deleted.emit(item); $event.stopPropagation();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
         <i class="material-icons">close</i>
+      </button>
+       <button (click)="selected.emit(item); $event.stopPropagation();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">edit</i>
       </button>
   </div>
 </div>
