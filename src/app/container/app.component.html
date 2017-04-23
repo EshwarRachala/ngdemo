@@ -1,13 +1,13 @@
 <div class="content mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Angular 2 Crud</span>
+      <span class="mdl-layout-title">Task Manager</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" [routerLink]="links.items">Tasks</a>
-        <a class="mdl-navigation__link" [routerLink]="links.items">Add Task</a>
-        <a class="mdl-navigation__link" [routerLink]="links.items">Edit Task</a>
-        <a class="mdl-navigation__link" [routerLink]="links.items">Delete Task</a>
+        <a class="mdl-navigation__link" [routerLink]="links.add">Add Task</a>
+        <a class="mdl-navigation__link" [routerLink]="links.edit">Edit Task</a>
+        <a class="mdl-navigation__link" [routerLink]="links.delete">Delete Task</a>
       </nav>
     </div>
   </header>

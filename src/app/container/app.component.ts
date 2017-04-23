@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   links = {
-    items: ['/items']
+    items: ['/items'],
+    add: ['./add'],
+    edit: ['./edit'],
+    delete: ['./delete']
   }
 }

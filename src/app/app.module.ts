@@ -7,9 +7,9 @@ import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './container/app.component';
-import { Items } from './components/items/items.component';
-import { ItemsList } from './components/items-list/items-list.component';
-import { ItemDetail } from './components/item-detail/item-detail.component';
+import { ItemsComponent } from './components/items/items.component';
+import { ItemsListComponent } from './components/items-list/items-list.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 
 import { ROUTES } from './routes/app.routes';
@@ -21,9 +21,9 @@ import { selectedItem } from './stores/selectedItem.store';
 @NgModule({
   declarations: [
     AppComponent,
-    Items,
-    ItemDetail,
-    ItemsList
+    ItemsComponent,
+    ItemDetailComponent,
+    ItemsListComponent
   ],
   imports: [
     BrowserModule,

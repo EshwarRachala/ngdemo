@@ -1,8 +1,8 @@
 <div class="fem-card mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text" *ngIf="selectedItem.id">
-      Editing   &nbsp; <strong>{{originalName}}</strong></h2>
-    <h2 class="mdl-card__title-text" *ngIf="!selectedItem.id">Create New Todo</h2>
+      Editing &nbsp; <strong>{{originalName}}</strong></h2>
+    <h2 class="mdl-card__title-text" *ngIf="!selectedItem.id">Create New Task</h2>
   </div>
   <div class="mdl-card__supporting-text">
     <form novalidate>
@@ -19,6 +19,10 @@
         <label>Task Priority</label>
         <input [(ngModel)]="selectedItem.priority" name="priority" placeholder="Enter task priority" class="mdl-textfield__input"
           type="text">
+        <!--<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+         <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+        <span class="mdl-switch__label"></span>
+      </label>-->
       </div>
       <div class="mdl-textfield mdl-js-textfield">
         <label>Task Creation Date</label>
@@ -27,8 +31,7 @@
       </div>
       <div class="mdl-textfield mdl-js-textfield">
         <label>Task Status</label>
-        <input [(ngModel)]="selectedItem.status" name="status" placeholder="Enter task status" class="mdl-textfield__input"
-          type="text">
+        <input [(ngModel)]="selectedItem.status" name="status" placeholder="Enter task status" class="mdl-textfield__input" type="text">
       </div>
     </form>
   </div>

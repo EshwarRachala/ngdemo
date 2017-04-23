@@ -4,8 +4,8 @@ import { Store } from '@ngrx/store';
 import { ItemsService } from '../../services/items.service';
 import { AppStore } from '../../models/appstore.model';
 import { Item } from '../../models/item.model';
-import { ItemsList } from '../items-list/items-list.component';
-import { ItemDetail } from '../item-detail/item-detail.component'
+import { ItemsListComponent } from '../items-list/items-list.component';
+import { ItemDetailComponent } from '../item-detail/item-detail.component'
 
 @Component({
   selector: 'items',
@@ -13,7 +13,7 @@ import { ItemDetail } from '../item-detail/item-detail.component'
   styleUrls: ['./items.component.css'],
   providers: [ItemsService]
 })
-export class Items {
+export class ItemsComponent {
   items: Observable<Array<Item>>;
   selectedItem: Observable<Item>;
 

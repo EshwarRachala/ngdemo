@@ -1,10 +1,14 @@
+import { ItemDetailComponent } from '../components/item-detail/item-detail.component';
 import { Routes } from '@angular/router';
-import { Items } from '../components/items/items.component';
+import { ItemsComponent } from '../components/items/items.component';
 
 export const ROUTES: Routes =
   [
-    { path: '', component: Items },
-    { path: 'items', component: Items },
-    { path: '*', component: Items }
+    { path: '', component: ItemsComponent },
+    { path: 'items', component: ItemsComponent },
+    { path: 'add', component: ItemDetailComponent },
+    { path: 'edit', component: ItemDetailComponent },
+    { path: 'delete', component: ItemDetailComponent },
+    { path: '*', component: ItemsComponent }
   ];
 
