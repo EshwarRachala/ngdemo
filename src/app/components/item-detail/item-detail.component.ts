@@ -12,7 +12,7 @@ export class ItemDetail {
   @Output() cancelled = new EventEmitter();
 
   @Input() set item(value: Item) {
-    if (value) this.originalName = value.name;
+    if (value) this.originalName = value.title;
     this.selectedItem = Object.assign({}, value);
   }
 }

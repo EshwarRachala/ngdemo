@@ -27,7 +27,7 @@ export class Items {
   }
 
   resetItem() {
-    let emptyItem: Item = { id: null, name: '', description: '' };
+    let emptyItem: Item = { id: null, title: '', description: '' };
     this.store.dispatch({ type: 'SELECT_ITEM', payload: emptyItem });
   }
 

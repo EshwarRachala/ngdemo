@@ -1,5 +1,8 @@
 export interface Item {
   id: number;
-  name: string;
+  title: string;
   description: string;
+  priority?: string;
+  creationdate?: string;
+  status?: boolean;
 };
