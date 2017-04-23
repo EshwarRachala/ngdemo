@@ -9,28 +9,12 @@
       "status": "not completed"
     },
     {
-      "title": "eshwar rachala",
-      "description": "fklsngdlkf",
+      "title": "Create toy car",
+      "description": "Toy car for tanvi school",
       "priority": "klfsnlkgdf",
       "creationdate": "lkdfslfms",
       "status": "kfdmklfmslk",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "title": "test",
-      "description": "etefdfgd",
-      "priority": "dfsdfsd",
-      "creationdate": "dsfdsdsf",
-      "status": "dsfsdfds"
-    },
-    {
-      "id": 5,
-      "title": "dkghkafs",
-      "description": "dsfsdfs",
-      "priority": "dsfds",
-      "creationdate": "dfdsfs",
-      "status": "dfsdfds"
+      "id": 2
     }
   ]
 }

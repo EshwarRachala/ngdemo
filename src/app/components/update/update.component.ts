@@ -6,11 +6,11 @@ import { Store } from '@ngrx/store';
 import { AppStore } from '../../models/appstore.model';
 
 @Component({
-  selector: 'app-change',
-  templateUrl: './change.component.html',
+  selector: 'app-update',
+  templateUrl: './update.component.html',
   providers: [ItemsService]
 })
-export class ChangeComponent {
+export class UpdateComponent {
 
   selectedItem: Observable<Item>;
 

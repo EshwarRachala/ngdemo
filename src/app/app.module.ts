@@ -10,17 +10,18 @@ import { AppComponent } from './container/app/app.component';
 import { ItemsComponent } from './components/items/items.component';
 import { ItemsListComponent } from './components/items-list/items-list.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
-
+import { AddComponent } from './components/add/add.component';
+import { UpdateComponent } from './components/update/update.component';
 
 import { ROUTES } from './routes/app.routes';
 import { items } from './stores/items.store';
 import { selectedItem } from './stores/selectedItem.store';
-import { ChangeComponent } from './container/change/change.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChangeComponent,
+    AddComponent,
+    UpdateComponent,
     ItemsComponent,
     ItemDetailComponent,
     ItemsListComponent
