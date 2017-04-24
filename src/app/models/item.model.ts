@@ -3,6 +3,6 @@ export interface Item {
   title: string;
   description: string;
   priority?: string;
-  creationdate?: string;
+  creationdate?: Date;
   status?: boolean;
 };

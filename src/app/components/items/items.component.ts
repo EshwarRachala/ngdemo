@@ -36,8 +36,10 @@ export class ItemsComponent {
   }
 
   saveItem(item: Item) {
-    this.itemsService.saveItem(item);
-    this.resetItem();
+    if (item.title !== undefined && item.id !== null) {
+      this.itemsService.saveItem(item);
+      this.resetItem();
+    }
   }
 
   deleteItem(item: Item) {
