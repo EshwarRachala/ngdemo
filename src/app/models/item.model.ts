@@ -2,7 +2,7 @@ export interface Item {
   id: number;
   title: string;
   description: string;
-  priority?: boolean;
-  creationdate?: Date;
+  priority?: string;
+  creationdate?: string;
   status?: boolean;
 };

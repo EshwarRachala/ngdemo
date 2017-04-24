@@ -12,12 +12,12 @@ import { AppStore } from '../../models/appstore.model';
 })
 export class AddComponent {
 
-  selectedItem: Observable<Item>;
+  //selectedItem: Observable<Item>;
 
   constructor(private itemsService: ItemsService,
     private store: Store<AppStore>) {
-    this.selectedItem = store.select('selectedItem');
-    this.selectedItem.subscribe(v => console.log(v));
+     //this.selectedItem = store.select('selectedItem');
+   // this.selectedItem.subscribe(v => console.log(v));
   }
 
   saveItem(item: Item) {

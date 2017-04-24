@@ -16,6 +16,7 @@ export class UpdateComponent {
 
   constructor(private itemsService: ItemsService,
     private store: Store<AppStore>) {
+
     this.selectedItem = store.select('selectedItem');
     this.selectedItem.subscribe(v => console.log(v));
   }
